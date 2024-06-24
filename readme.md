@@ -55,13 +55,13 @@ cd react-mysql-mindtwoyou
         MYSQL_HOST: mysql
         MYSQL_USER: root
         MYSQL_PASSWORD: password
-        MYSQL_DATABASE: nome_do_banco
+        MYSQL_DATABASE: my_database
     mysql:
       image: mysql:latest
       restart: always
       environment:
         MYSQL_ROOT_PASSWORD: password
-        MYSQL_DATABASE: nome_do_banco
+        MYSQL_DATABASE: my_database
   ```
 
 5. **Executando a Aplicação**:
@@ -69,7 +69,7 @@ cd react-mysql-mindtwoyou
   ```
   docker-compose up
   ```
-- O frontend estará acessível em `http://localhost:3000` e o backend em `http://localhost:5000`.
+- O frontend estará acessível em `http://localhost:3000` e o backend em `http://localhost:4000`.
 
 ## Rotas da API
 A API oferece as seguintes rotas para gerenciar pedidos:
