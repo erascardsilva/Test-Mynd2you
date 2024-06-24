@@ -1,0 +1,181 @@
+.angry-grid {
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Ajuste as proporções das linhas */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Mantém 5 colunas com a mesma proporção */
+  gap: 0px;
+  height: 100vh; /* Altura total da viewport */
+}
+
+#item-0 {
+  background-color: #000000;
+  grid-row: 1 / 2;
+  grid-column: 1 / 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-title h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.btn {
+  color: white;
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px 15px; /* Reduz o padding dos botões */
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 120px; /* Reduz a largura máxima dos botões */
+}
+
+.btn:hover {
+  background-color: #e60000;
+}
+
+.icon-white {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#item-1 {
+  background-color: #000000;
+  grid-row: 2 / 4; /* Reduz a altura do item 1 */
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que o conteúdo ultrapasse o tamanho definido */
+}
+
+
+.btn-vertical {
+  color: white;
+  background-color: #040404;
+  border: none;
+  padding: 8px 15px; /* Reduz o padding dos botões */
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px; /* Reduz o espaço entre os botões */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: auto; /* Define uma largura máxima para cada botão */
+}
+
+.btn-vertical:hover {
+  background-color: #e60000;
+}
+
+.vertical-selection {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 77, 77, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.vertical-selection.active {
+  display: block;
+}
+
+#item-2 {
+  background-color: #000000;
+  grid-row: 2 / 4; /* Reduz a altura do item 2 */
+  grid-column: 2 / 3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#item-3 {
+  background-color: #6d7cc5;
+  grid-row: 2 / 4; /* Ajusta para não sobrepor o item 0 */
+  grid-column: 3 / 6;
+  overflow-y: auto; /* Permite rolagem vertical se necessário */
+  padding: 20px; /* Adiciona espaço interno */
+}
+
+.prato-item {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espaçamento entre os pratos */
+  display: flex; /* Para permitir alinhamento vertical da imagem */
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
+}
+
+.prato-info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.prato-image {
+  width: 200px; /* Aumenta significativamente o tamanho da imagem */
+  height: 200px; /* Aumenta significativamente o tamanho da imagem */
+  border-radius: 10px; /* Reduz a curvatura da borda */
+  overflow: hidden; /* Esconde partes da imagem que extrapolam o círculo */
+  margin-right: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+
+.prato-image img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar o container */
+  height: 100%; /* Ajusta a altura da imagem */
+  object-fit: cover; /* Ajusta o preenchimento da imagem */
+  border-radius: 10px; /* Garante que a imagem seja um círculo */
+}
+
+.prato-details {
+  flex: 1;
+  min-width: 200px; /* Garante que os detalhes não fiquem muito pequenos */
+}
+
+.prato-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(5, 5, 5); /* Cor do título do prato */
+}
+
+.prato-details p {
+  color: rgb(1, 1, 1); /* Cor da descrição do prato */
+  margin-bottom: 15px;
+}
+
+.prato-actions {
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn-red {
+  color: white;
+  background-color: #ff4d4d;
+  border: none;
+  padding: 8px 15px; /* Reduz o padding dos botões */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-red:hover {
+  background-color: #e60000;
+}

@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: erasmo
+      MYSQL_PASSWORD: 3727
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+
+  backend:
+    build: ./backend
+    container_name: backend-container
+    ports:
+      - "4000:4000"
+    environment:
+      DB_HOST: db
+      DB_USER: erasmo
+      DB_PASSWORD: 3727
+      DB_NAME: my_database
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  app:
+    build: ./react-mysql-mindtwoyou
+    container_name: frontend-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react-mysql-mindtwoyou:/app
+    depends_on:
+      - db
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:
