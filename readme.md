@@ -1,5 +1,8 @@
 # Documentação do Projeto
 
+<img width = "1000px" src="https://github.com/erascardsilva/Test-Mynd2you/assets/70297459/247f965d-b39f-4757-8063-380e7847cf87">
+
+
 ## Visão Geral
 Este projeto consiste em uma aplicação web desenvolvida com React no frontend e Express no backend. Utiliza um banco de dados MySQL para armazenar e gerenciar dados relacionados a pedidos de alimentos. O Docker é utilizado para facilitar a configuração e execução do ambiente de desenvolvimento.
 
