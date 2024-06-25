@@ -1,0 +1,45 @@
+### Listar todos os pedidos
+GET http://localhost:4000/api/pedidos
+Content-Type: application/json
+
+###
+
+### Criar um novo pedido
+POST http://localhost:4000/api/pedidos
+Content-Type: application/json
+
+{
+    "tipo": "prato",
+    "descricao": "Salada Caesar",
+    "tamanho_porcao": "Individual",
+    "ingredientes": "Alface, frango grelhado, queijo parmesão, croutons, molho caesar",
+    "personalizacao": "Sem croutons",
+    "finalizacao": "Para viagem",
+    "preco": "20.00",
+    "foto_path": "salada.png"
+}
+
+###
+
+### Atualizar um pedido
+PUT http://localhost:4000/api/pedidos/1
+Content-Type: application/json
+
+{
+    "tipo": "prato",
+    "descricao": "Feijoada",
+    "tamanho_porcao": "Grande",
+    "ingredientes": "Feijão preto, carne seca, linguiça, costela de porco, arroz, couve, laranja",
+    "personalizacao": "Com pimenta",
+    "finalizacao": "Consumir na mesa",
+    "preco": "49.90",
+    "foto_path": "feijoada.png"
+}
+
+###
+
+### Deletar um pedido
+DELETE http://localhost:4000/api/pedidos/1
+Content-Type: application/json
+
+###
