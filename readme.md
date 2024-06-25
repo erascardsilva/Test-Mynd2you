@@ -120,3 +120,16 @@ body: JSON.stringify({
 .then(response => response.json())
 .then(data => console.log('Novo pedido criado:', data))
 .catch(error => console.error('Erro ao criar novo pedido:', error));
+
+
+- No diretório raiz do backend usar para testes api.http:
+  ```
+  api.http
+
+  ### Listar todos os pedidos
+GET http://localhost:4000/api/pedidos
+Content-Type: application/json
+
+###
+etc....
+  ```
