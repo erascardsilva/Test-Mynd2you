@@ -27,7 +27,7 @@ Content-Type: application/json
 
 {
     "tipo": "prato",
-    "descricao": "Feijoada",
+    "descricao": "Feijoada grande",
     "tamanho_porcao": "Grande",
     "ingredientes": "Feijão preto, carne seca, linguiça, costela de porco, arroz, couve, laranja",
     "personalizacao": "Com pimenta",
@@ -39,7 +39,7 @@ Content-Type: application/json
 ###
 
 ### Deletar um pedido
-DELETE http://localhost:4000/api/pedidos/1
+DELETE http://localhost:4000/api/pedidos/13
 Content-Type: application/json
 
 ###

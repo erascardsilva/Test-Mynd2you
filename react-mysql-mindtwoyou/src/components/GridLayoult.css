@@ -1,7 +1,7 @@
 .angry-grid {
   display: grid;
   grid-template-rows: auto auto 1fr; /* Ajuste as proporções das linhas */
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Mantém 5 colunas com a mesma proporção */
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr; 
   gap: 0px;
   height: 100vh; /* Altura total da viewport */
 }
@@ -105,7 +105,7 @@
 }
 
 #item-3 {
-  background-color: #6d7cc5;
+  background-color: #11183f;
   grid-row: 2 / 4; /* Ajusta para não sobrepor o item 0 */
   grid-column: 3 / 6;
   overflow-y: auto; /* Permite rolagem vertical se necessário */
