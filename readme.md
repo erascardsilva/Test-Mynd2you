@@ -125,7 +125,7 @@ body: JSON.stringify({
 - No diretório raiz do backend usar para testes api.http:
   
   api.http
-
+```
   ### Listar todos os pedidos
 GET http://localhost:4000/api/pedidos
 Content-Type: application/json
