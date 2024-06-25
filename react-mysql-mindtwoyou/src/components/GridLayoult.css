@@ -1,7 +1,7 @@
 .angry-grid {
   display: grid;
   grid-template-rows: auto auto 1fr; /* Ajuste as proporções das linhas */
-  grid-template-columns: 1fr 1fr 1fr 2fr 2fr; 
+  grid-template-columns: 1fr 1fr 2fr 2fr 2fr; 
   gap: 0px;
   height: 100vh; /* Altura total da viewport */
 }
@@ -126,7 +126,7 @@
 .prato-info {
   display: flex;
   flex: 1;
-  align-items: center;
+  align-items: right;
 }
 
 .prato-image {
