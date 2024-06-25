@@ -3,6 +3,12 @@
 ## Visão Geral
 Este projeto consiste em uma aplicação web desenvolvida com React no frontend e Express no backend. Utiliza um banco de dados MySQL para armazenar e gerenciar dados relacionados a pedidos de alimentos. O Docker é utilizado para facilitar a configuração e execução do ambiente de desenvolvimento.
 
+Execultar o projeto 
+No diretorio raiz do projedo digite :
+  ```
+  docker-compose up --build
+  ```
+
 ## Componentes Principais
 - **Frontend**: Desenvolvido em React, este componente oferece uma interface de usuário interativa para visualização e interação com os pedidos de alimentos.
   
@@ -67,7 +73,7 @@ cd react-mysql-mindtwoyou
 5. **Executando a Aplicação**:
 - No diretório raiz do projeto, execute:
   ```
-  docker-compose up
+  docker-compose up --build
   ```
 - O frontend estará acessível em `http://localhost:3000` e o backend em `http://localhost:4000`.
 
